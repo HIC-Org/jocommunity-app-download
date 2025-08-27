@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jo 社區 App 下載</title>
+  <script>
+    window.onload = function () {
+      const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+      if (/iPhone/i.test(userAgent)) {
+        window.location.href = "";
+      } else if (/Android/i.test(userAgent)) {
+        window.location.href = "";
+      } else {
+        document.getElementById("message").innerText =
+          "請用手機掃描 QR Code 以下載 App";
+      }
+    };
+  </script>
+</head>
+<body style="font-family: Arial, sans-serif; text-align: center; padding: 50px;">
+  <h1>Jo 社區 App</h1>
+  <p id="message">請稍候...</p>
+</body>
+</html>
